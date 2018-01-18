@@ -1,14 +1,12 @@
 var list = document.getElementById('list');
 
-var add = document.getElementById('button');
+var add = document.getElementById('addElem');
 
-button.addEventListener(click, function(addElem) {
+add.addEventListener("click", function() {
   
   var element = document.createElement('li');
-  element.innerHTML = 'item';
-  x =  document.getElementsByTagName('li');
-  var xlength = x.length;
-  console.log(xlength);
+  var allLi =  document.getElementsByTagName('li');
   list.appendChild(element);
+  element.innerHTML = 'item ' + allLi.length;
   
 });
