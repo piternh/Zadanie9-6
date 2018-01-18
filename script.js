@@ -5,7 +5,7 @@ var add = document.getElementById('addElem');
 add.addEventListener("click", function() {
   
   var element = document.createElement('li');
-  var allLi =  document.getElementsByTagName('li');
+  var allLi =  list.getElementsByTagName('li');
   list.appendChild(element);
   element.innerHTML = 'item ' + allLi.length;
   
